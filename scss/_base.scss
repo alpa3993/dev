@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Open+Sans+Condensed:300|Droid+Serif);
+
+.home {
+	background-color: grey;
+}
+
+
+h1 {
+	font-family: 'Droid Serif', serif;
+}
+
+ul {
+	list-style: none;
+	font-family: 'Open Sans Condensed', serif;
+	padding: 10px;
+	font-size: 20px;
+}
+
+a {
+		text-decoration: none;
+		color: #FFB6C1;
+
+	}
+
+a:hover {
+	text-decoration: underline;
+	color: white;
+}

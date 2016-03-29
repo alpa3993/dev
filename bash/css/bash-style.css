@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Passion+One);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* default styles */
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+.centerme {
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hide {
+	display: none;
+}
+
+/* page styles */
+
+.home {
+	background-image: url(../img/fire-heart.png);
+	center center fixed no-repeat;
+	-webkit-background-size: cover;
+	font-family: sans-serif;
+	font-size: 62.5%;
+}
+
+/*
+.box {
+	background: rgba(255,255,255,0.65);
+	border: 1px solid rgba(0,0,0,0.5);
+	padding: 5px 10px;
+	margin-bottom: 15px;
+}
+*/
+
+
+.box {
+	background: rgba(0,0,0,0.50);
+	padding: 5px 10px;
+	margin-bottom: 15px;
+}
+
+.twocolumn {
+	width: 49%;
+
+}
+
+.command{
+	font-size: 1.75em;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+h1 {
+	font-size: 4.5em;
+	font-family: 'Lobster', cursive;
+	color: rgb(208,0,0);
+}
+
+h2 {
+	font-size: 3.0em;
+	font-family: 'Lobster', cursive;
+
+}
+
+p, li {
+	font-family: 'open sans', sans-serif;
+}
+
+h2, p, li {
+	margin-bottom: 7px;
+	color: white;
+}
+
+p {
+	font-size: 2.0em;
+	font-family: 'Lobster', cursive;
+
+}
+
+li{
+	list-style-type: none;
+	font-size: 1.2em;
+}
+
+h3 {
+	color: white;
+	font-size: 2.0em;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
