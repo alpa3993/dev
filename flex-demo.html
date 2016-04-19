@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FLEX THIS</title>
+	<style>
+		.flex-container {
+			width: 90%;
+			padding: 10px;
+			border: solid 1px red;
+			-webkit-display: flex;
+			-ms-display: flexbox;
+			display: flex;
+			
+			/* -webkit-flex-flow: row-reverse nowrap;
+			-ms-flex-flow: row-reverse nowrap;
+			flex-flow: row-reverse nowrap; */
+
+			/* -webkit-justify-content: space-between;
+			-ms-flexpack: justify;
+			justify-content: space-between; */
+			/* flex-start, flex-end, center, space-around, space-between */
+
+			/* -webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center; */
+			/* flex-start, flex-end, start for ms, end for ms, center, stretch, baseline */
+		}
+
+		.flex-container section {
+			background: rgba(0,0,0,0.2);
+			border: solid 1px black;
+			padding: 10px;
+			margin: 0 3%;
+			flex: 1;
+		}
+		
+		.flex-container section:nth-of-type(2n) {
+			flex: 2;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.flex-container {
+			-webkit-flex-flow: column;
+			-ms-flex-flow: column;
+			flex-flow: column;
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+<header>
+	<h1>FLEX IT</h1>
+</header>
+	<main class="flex-container">
+		<section>
+			<h2>ONE</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis veniam eveniet obcaecati saepe fugit porro, perferendis ab. Illum, consequatur consequuntur tempore facere doloribus nostrum obcaecati, quidem adipisci aliquid qui dignissimos!</p>
+			<p>Beatae quo expedita quas aspernatur commodi sequi praesentium, itaque aperiam at quidem eos illum! Animi odio, quos accusamus facilis. Porro quis rem a eligendi sequi quos nostrum maiores incidunt ad!</p>
+		</section>
+		<section>
+			<h2>TWO</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, amet. Debitis odit corporis accusamus ratione, consectetur, esse perspiciatis, mollitia, harum quam soluta animi earum aut blanditiis aliquam accusantium laboriosam cumque!</p>
+			<p>Architecto est quibusdam illum minima fugiat quod dolorum quas provident animi expedita enim soluta eveniet id dolor alias pariatur placeat quis recusandae, dicta autem atque magnam. Suscipit non similique, maxime?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, amet. Debitis odit corporis accusamus ratione, consectetur, esse perspiciatis, mollitia, harum quam soluta animi earum aut blanditiis aliquam accusantium laboriosam cumque!</p>
+			<p>Architecto est quibusdam illum minima fugiat quod dolorum quas provident animi expedita enim soluta eveniet id dolor alias pariatur placeat quis recusandae, dicta autem atque magnam. Suscipit non similique, maxime?</p>
+		</section>
+		<section>
+			<h2>THREE</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, placeat unde reprehenderit cupiditate molestias sequi ullam. Perspiciatis maiores reiciendis nihil vel consequuntur, pariatur similique quasi, fugiat, repellendus neque voluptatibus labore.</p>
+			<p>Maiores quos et, nulla architecto quod esse, autem! Animi repudiandae numquam consectetur alias ut sapiente ea velit quasi nostrum, aut sequi enim ex similique fuga tempore minima impedit eum eos?</p>
+		</section>
+	</main>
+</body>
+</html>

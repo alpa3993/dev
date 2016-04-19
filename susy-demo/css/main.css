@@ -1,0 +1,128 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfixed:after, div:after,
+section:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.7);
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+header,
+nav,
+main,
+section,
+aside {
+  background: rgba(255, 255, 255, 0.7);
+  border: solid 2px rgba(0, 0, 0, 0.7);
+}
+
+main {
+  width: 65%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+
+aside {
+  width: 31.66667%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+
+.gallery img {
+  width: 23.33333%;
+  float: left;
+}
+.gallery img:nth-child(4n + 1) {
+  margin-left: 0.83333%;
+  margin-right: -100%;
+  clear: both;
+}
+.gallery img:nth-child(4n + 2) {
+  margin-left: 25.83333%;
+  margin-right: -100%;
+  clear: none;
+}
+.gallery img:nth-child(4n + 3) {
+  margin-left: 50.83333%;
+  margin-right: -100%;
+  clear: none;
+}
+.gallery img:nth-child(4n + 4) {
+  margin-left: 75.83333%;
+  margin-right: -100%;
+  clear: none;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  aside {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .gallery img {
+    width: 48.33333%;
+    float: left;
+  }
+  .gallery img:nth-child(2n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both;
+  }
+  .gallery img:nth-child(2n + 2) {
+    margin-left: 50.83333%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 1px) and (max-width: 480px) {
+  main {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  aside {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .gallery img {
+    width: 90%;
+    float: left;
+  }
+  .gallery img:nth-child(1n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both;
+  }
+}

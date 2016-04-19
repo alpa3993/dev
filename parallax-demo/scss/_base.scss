@@ -102,8 +102,8 @@ p
 		}
 
 .icon {
-	position: fixed;
-	z-index: 150;
+	position: absolute;
+	z-index: 1000;
 	right: 530px;
 	top: 425px;
 
